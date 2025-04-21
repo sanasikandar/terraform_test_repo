@@ -1,6 +1,7 @@
 locals {
   tags = {
-    Project     = "TerraformDemo"
-    Environment = terraform.workspace
+    Project = "VPC-EC2-RDS"
+    Owner   = "DevOps"
   }
 }
+
