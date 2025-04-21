@@ -39,17 +39,17 @@ Before using this configuration, ensure you have the following:
       --attribute-definitions AttributeName=LockID,AttributeType=S \
       --key-schema AttributeName=LockID,KeyType=HASH \
       --billing-mode PAY_PER_REQUEST
+
 ## How To Use
-1. Clone the Repository
+
+### 1. Clone the Repository
 Clone the repository to your local machine:
- git clone https://github.com/sanasikandar/terraform_test_repo.git
- cd terraform_test_repo
-2. Initialize Terraform
-  terraform init
-  # This will set up the remote backend (S3 and DynamoDB) and download the necessary providers.
-3. Review or Customize Variables
-  # Edit terraform.tfvars or pass values via -var flags.
-4. Apply the Configuration
-   terraform apply
+
+```bash
+git clone https://github.com/sanasikandar/terraform_test_repo.git
+cd terraform_test_repo
+terraform init
+terraform apply -var="region=us-east-1" -var="key_name=my-key" -var="db_password=SuperSecretPassword123!"
+
 
 
