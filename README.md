@@ -42,8 +42,8 @@ Before using this configuration, ensure you have the following:
 ## How To Use
 1. Clone the Repository
 Clone the repository to your local machine:
- git clone https://github.com/your-org/terraform-aws-vpc-ec2-rds.git
- cd terraform-aws-vpc-ec2-rds
+ git clone https://github.com/sanasikandar/terraform_test_repo.git
+ cd terraform_test_repo
 2. Initialize Terraform
   terraform init
   # This will set up the remote backend (S3 and DynamoDB) and download the necessary providers.
